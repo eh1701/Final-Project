@@ -1,0 +1,804 @@
+#header{
+  background-color:black;
+	color:white;
+	font-size: 200%;
+	height:60px;
+	padding-top:20px;
+	padding-left:20px;
+}
+
+a:visited {
+  color: white;
+}
+
+#background{
+  width: 1300px;
+  height: 500px;
+  height: auto;
+  z-index: -3;
+}
+
+#parisletter{
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  z-index: -4;
+}
+
+
+#arcImg{
+  position: fixed;
+  width: 100px;
+  height: 70px;
+  margin-left: 320px;
+  margin-top: 330px;
+  z-index: -1;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#arcImg:hover {
+  opacity: 0.7;
+}
+.arcZoom {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#arcText {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 25px;
+}
+.arcZoom, #arcText {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+.arcClose {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.arcClose:hover, .arcClose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#bastilleImg{
+  position: fixed;
+  width: 70px;
+  height: 100px;
+  margin-left: 800px;
+  margin-top: 400px;
+  z-index: -2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#bastilleImg:hover {
+  opacity: 0.7
+}
+.bastilleZoom {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#bastilleText {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 25px;
+}
+.bastilleZoom, #bastilleText {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+.bastilleClose {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.bastilleClose:hover, .bastilleClose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#centreImg{
+  position: fixed;
+  width: 100px;
+  height: 70px;
+  margin-left: 770px;
+  margin-top: 320px;
+  z-index: -2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#centreImg:hover {
+  opacity: 0.7
+}
+.centreZoom {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#centreText {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 25px;
+}
+.centreZoom, #centreText {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+.centreClose {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.centreClose:hover, .centreClose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#disneyImg{
+  position: fixed;
+  width: 150px;
+  height: 125px;
+  margin-left: 1005px;
+  margin-top: 100px;
+  z-index: -2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#disneyImg:hover {
+  opacity: 0.7
+}
+.disneyZoom {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#disneyText {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 25px;
+}
+.disneyZoom, #disneyText {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+.disneyClose {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.disneyClose:hover, .disneyClose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#eiffelImg{
+  position: fixed;
+  width: 70px;
+  height: 100px;
+  margin-left: 430px;
+  margin-top: 350px;
+  z-index: -2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#eiffelImg:hover {
+  opacity: 0.7
+}
+.eiffelZoom {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#eiffelText {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 25px;
+}
+.eiffelZoom, #eiffelText {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+.eiffelClose {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.eiffelClose:hover, .eiffelClose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#grandeImg{
+  position: fixed;
+  width: 150px;
+  height:100px;
+  margin-left: 50px;
+  margin-top: 300px;
+  z-index: -2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#grandeImg:hover {
+  opacity: 0.7
+}
+.grandeZoom {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#grandeText {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 25px;
+}
+.grandeZoom, #grandeText {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+.grandeClose {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.grandeClose:hover, .grandeClose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#lesImg{
+  position: fixed;
+  width: 100px;
+  height: 70px;
+  margin-left: 500px;
+  margin-top: 450px;
+  z-index: -2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#lesImg:hover {
+  opacity: 0.7
+}
+.lesZoom {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#lesText {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 25px;
+}
+.lesZoom, #lesText {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+.lesClose {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.lesClose:hover, .lesClose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#louvreImg{
+  position: fixed;
+  width: 100px;
+  height: 70px;
+  margin-left: 550px;
+  margin-top: 270px;
+  z-index: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#louvreImg:hover {
+  opacity: 0.7
+}
+.louvreZoom {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#louvreText {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 25px;
+}
+.louvreZoom, #louvreText {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+.louvreClose {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.louvreClose:hover, .louvreClose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#moulinImg{
+  position: fixed;
+  width: 100px;
+  height: 70px;
+  margin-top: 50px;
+  margin-left: 570px;
+  z-index: -2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#moulinImg:hover {
+  opacity: 0.7
+}
+.moulinZoom {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#moulinText {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 25px;
+}
+.moulinZoom, #moulinText {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+.moulinClose {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.moulinClose:hover, .moulinClose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#museeImg{
+  position: fixed;
+  width: 100px;
+  height: 70px;
+  margin-left: 550px;
+  margin-top: 370px;
+  z-index: -1;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#museeImg:hover {
+  opacity: 0.7
+}
+.museeZoom {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#museeText {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 25px;
+}
+.museeZoom, #museeText {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+.museeClose {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.museeClose:hover, .museeClose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#notreImg{
+  position: fixed;
+  width: 70px;
+  height: 100px;
+  margin-left: 690px;
+  margin-top: 350px;
+  z-index: -2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#notreImg:hover {
+  opacity: 0.7
+}
+.notreZoom {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#notreText {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 25px;
+}
+.notreZoom, #notreText {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+.notreClose {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.notreClose:hover, .notreClose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#pantheonImg{
+  position: fixed;
+  width: 100px;
+  height: 80px;
+  margin-left: 680px;
+  margin-top: 480px;
+  z-index: -2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#pantheonImg:hover {
+  opacity: 0.7
+}
+.pantheonZoom {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#pantheonText {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 25px;
+}
+.pantheonZoom, #pantheonText {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+.pantheonClose {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.pantheonClose:hover, .pantheonClose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#sacreImg{
+  position: fixed;
+  width: 100px;
+  height: 70px;
+  margin-left: 675px;
+  margin-top: 50px;
+  z-index: -2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#sacreImg:hover {
+  opacity: 0.7
+}
+.sacreZoom {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#sacreText {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 25px;
+}
+.sacreZoom, #sacreText {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+.sacreClose {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.sacreClose:hover, .sacreClose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#versaillesImg{
+  position: fixed;
+  width: 120px;
+  height: 100px;
+  margin-left: 60px;
+  margin-top: 550px;
+  z-index: -2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#versaillesImg:hover {
+  opacity: 0.7
+}
+.versaillesZoom {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#versaillesText {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 25px;
+}
+.versaillesZoom, #versaillesText {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+.versaillesClose {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.versaillesClose:hover, .versaillesClose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#background{
+  position: fixed;
+  width: 1300px;
+  height: 700px;
+  z-index: -3;
+}
+
+#parisletter{
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  z-index: -4;
+}
+
+p{
+  font-family:sans-serif;
+  font-size: 20px;
+}
+
+.textbox {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
